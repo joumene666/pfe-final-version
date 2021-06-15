@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.bg-gradient-joumene{
+    background: rgb(255,229,59);
+    background: linear-gradient(90deg, rgb(255, 63, 63) 0%, rgba(255,37,37,1) 40%);
+} 
