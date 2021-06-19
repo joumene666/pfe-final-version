@@ -14,6 +14,6 @@
 
 return [
     'failed'   => 'Ces identifiants ne correspondent pas à nos enregistrements.',
-    'password' => 'Le mot de passe fourni est incorrect.',
+    'password' => 'Le mot de passe entré est incorrect.',
     'throttle' => 'Tentatives de connexion trop nombreuses. Veuillez essayer de nouveau dans :seconds secondes.',
 ];

@@ -1,10 +1,15 @@
 <div>
     <div 
+    @php
+        use Carbon\Carbon;
+        Carbon::setLocale('fr');
+    @endphp
+
     class="{{$showPopUp ? 'hidden' : ''}} flex absolute top-0 left-0 items-center justify-center h-screen w-full"
     
     >
         <div class="bg-white rounded shadow-xl p-10">
-            <h1 class="text-lg text-black mb-8">Voulez vous supprimer cette adhérent</h1>
+            <h1 class="text-lg text-black mb-8">Voulez vous supprimer cette structure</h1>
             <div class="flex items-center justify-center">
                 <button wire:click="cancel()" class="px-6 py-2 bg-gray-300 rounded mr-3">
                     Annuler

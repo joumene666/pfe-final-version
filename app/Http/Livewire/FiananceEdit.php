@@ -58,12 +58,12 @@ class FiananceEdit extends Component
         ]);
         if ($this->finance){
 
-            session()->flash('success', 'Finance Modifiée avec succées');
+            session()->flash('success', 'Cotisation modifier avec succées');
 
             return redirect()->route('financiere.index');
             
         }else{
-            return back()->with('error', 'Il y aune erreur sil vous plais essayer plus tard');
+            return back()->with('error', 'Il y a une erreur s\'il vous plait essayer plus tard');
         }
     }
     public function render()

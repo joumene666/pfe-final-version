@@ -4,7 +4,7 @@
   
   >
       <div class="bg-white rounded shadow-xl p-10">
-          <h1 class="text-lg text-black mb-8">Voulez vous supprimer cette adhérent</h1>
+          <h1 class="text-lg text-black mb-8">Voulez vous supprimer cette cotisation</h1>
           <div class="flex items-center justify-center">
               <button wire:click="cancel()" class="px-6 py-2 bg-gray-300 rounded mr-3">
                   Annuler
@@ -77,7 +77,7 @@
               <td class="border-grey-light border">
                 <div class="flex items-center">
                   @if (auth()->user()->type_adherent==="Tresorier")
-                  <a  href="/gestion-financiere/{{$finance->id}}/edit" class="hover:bg-gray-100 p-3 text-yellow-400 hover:text-yellow-600 hover:font-medium cursor-pointer focus:outline-none capitalize">
+                  <a  href="/gestion-financiere/{{$finance->id}}/edit" class="hover:bg-gray-100 p-3 text-green-400 hover:text-gray-600 hover:font-medium cursor-pointer focus:outline-none capitalize">
                     Modifier
                   </a>
 
@@ -85,7 +85,7 @@
 
                   <button wire:click="showPopUp({{$finance->id}})"
                     type="button"
-                    class="hover:bg-gray-100 p-3 text-yellow-400 hover:text-yellow-600 hover:font-medium cursor-pointer focus:outline-none capitalize"
+                    class="hover:bg-gray-100 p-3 text-green-400 hover:text-yellow-600 hover:font-medium cursor-pointer focus:outline-none capitalize"
                   >
                     Supprimer
                   </button>

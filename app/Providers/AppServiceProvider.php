@@ -6,6 +6,7 @@ use App\Models\Structer;
 use App\Models\User;
 use App\Observers\StructerObserver;
 use App\Observers\UserObserver;
+
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -29,5 +30,6 @@ class AppServiceProvider extends ServiceProvider
     {
         User::observe(UserObserver::class);
         Structer::observe(StructerObserver::class);
+        
     }
 }

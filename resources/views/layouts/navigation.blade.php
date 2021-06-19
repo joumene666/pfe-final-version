@@ -35,7 +35,7 @@
                     <!-- Navigation Links -->
                     @endif
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link :href="route('financiere.index')" :active="request()->routeIs('financiere.index')">
+                        <x-nav-link :href="route('financiere.index')" :active="request()->routeIs('financiere.*')">
                             {{ __('Gestion financières') }}
                         </x-nav-link>
                     </div>
@@ -60,9 +60,8 @@
 
                     <x-slot name="content">
                         <!-- Authentication -->
-                        <x-dropdown-link :href="route('logout')"
-                        onclick="event.preventDefault();
-                                            this.closest('form').submit();">
+                        <x-dropdown-link :href="route('adherent.profile')"
+                        >
                             {{ __('Profile') }}
                         </x-dropdown-link>
                         <form method="POST" action="{{ route('logout') }}">

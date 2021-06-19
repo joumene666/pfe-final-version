@@ -7,6 +7,7 @@ use App\Models\gouvernerat;
 use App\Models\secteur;
 use App\Models\Structer;
 use Livewire\Component;
+use Prophecy\Promise\ReturnPromise;
 
 class FormComponent extends Component
 {
@@ -53,6 +54,13 @@ class FormComponent extends Component
             'secteur_id' => 'required',
             'jort_creation' => 'required',
         ]);
+
+        $code  = Structer::where('code_structer', $this->code)->first();
+        
+        if($code){
+            return abort('403');
+        }
+
         $structer = Structer::create([
             'date_creation' => $this->date_creation,
             'matricule_fiscale' => $this->matricule_fiscale,
@@ -66,7 +74,7 @@ class FormComponent extends Component
         if ($structer){
             return back()->with('success', 'Structure ajoutée avec succées');
         }else{
-            return back()->with('error', 'Il y aune erreur sil vous plais essayer plus tard');
+            return back()->with('error', 'Il y a une erreur sil vous plait essayer plus tard');
         }
     }
 

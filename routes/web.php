@@ -22,6 +22,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 Route::get('/gestion-des-adhérents', [AdherentController::class, 'index'])->middleware(['auth'])->name('adherent.index');
+
+Route::get('/profile', [AdherentController::class, 'profile'])->middleware(['auth'])->name('adherent.profile');
+
 Route::get('/gestion-des-adhérents/historique', [ActivityController::class, 'index'])->middleware(['auth'])->name('activity.index');
 Route::get('/gestion-des-adhérents/{id}/edit', [AdherentController::class, 'edit'])->middleware(['auth'])->name('adherent.edit');
 

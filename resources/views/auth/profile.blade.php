@@ -83,15 +83,15 @@
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Nom</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->firstname}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Prénom</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->lastname}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">CIN/Passport</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->cin}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Nationalité</h3>

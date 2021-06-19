@@ -22,6 +22,18 @@ class AdherentController extends Controller
             'adherents' => $adherents
         ]);
     }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function profile()
+    {
+        $adherent = auth()->user(); 
+        return view('auth.profile', [
+            'adherent' => $adherent
+        ]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -203,7 +215,7 @@ class AdherentController extends Controller
             return redirect()->route('adherent.index')->with('success', 'Adherent Modifié avec succées');
             // return back()->with('success', 'Adherent Modifié avec succées');
         } else {
-            return back()->with('error', 'Il y aune erreur sil vous plais essayer plus tard');
+            return back()->with('error', 'Il y a une erreur s\'il vous plait réessayer plus tard');
         }
     }
 

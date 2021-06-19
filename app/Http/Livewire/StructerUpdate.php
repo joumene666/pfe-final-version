@@ -77,7 +77,7 @@ class StructerUpdate extends Component
             return redirect()->route('structures.index');
            
         }else{
-            return back()->with('error', 'Il y aune erreur sil vous plais essayer plus tard');
+            return back()->with('error', 'Il y a une erreur sil vous plait essayer plus tard');
         }
     }
 
