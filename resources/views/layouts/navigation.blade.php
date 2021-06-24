@@ -36,7 +36,7 @@
                     @endif
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-nav-link :href="route('financiere.index')" :active="request()->routeIs('financiere.*')">
-                            {{ __('Gestion financières') }}
+                            {{ __('Gestion des cotisations') }}
                         </x-nav-link>
                     </div>
                 

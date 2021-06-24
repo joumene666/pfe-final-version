@@ -83,7 +83,7 @@
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Nom</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->firstname}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->firstname}}</span> 
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Prénom</h3>
@@ -95,54 +95,54 @@
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Nationalité</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->nationality}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Profession</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->profession}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Genre</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->gender}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Date de naissance</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->birth_date}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Lieu de naissance:</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->place_birth}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Type Adhérent</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->type_adherent}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Date d'adhésion</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->joinning_date}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Email</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->email}}</span>
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Telephone</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->phone}}</span>
                         </div>
                         
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Code Strcuture</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->structer_id}}</span>
                         </div>
                         
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm "> Commission</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->code_commession}}</span>
                        
                         </div>
                         <div class="w-full py-3 px-3 bg-white border border-gray-200 rounded shadow-xl">
                             <h3 class="font-bold text-sm ">Observation</h3>
-                            <span class="block text-xs text-gray-500">{{$adherent->code_adherent}}</span>
+                            <span class="block text-xs text-gray-500">{{$adherent->observation}}</span>
                         </div>
                        
 

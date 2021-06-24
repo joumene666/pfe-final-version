@@ -115,7 +115,7 @@ class AdherentController extends Controller
 
             return back()->with('success', 'Adherent ajoutée avec succées');
         } else {
-            return back()->with('error', 'Il y aune erreur sil vous plais essayer plus tard');
+            return back()->with('error', 'Il y\'a une erreur s\'il vous plait essayer plus tard');
         }
     }
 

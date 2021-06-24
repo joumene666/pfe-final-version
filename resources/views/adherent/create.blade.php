@@ -287,7 +287,7 @@
 
                             <div class="mb-4 w-64">
                                 <label for="commission" class="block mb-1">
-                                    Code Commission
+                                    Commission
                                     <span class="text-red-500">*</span>
                                 </label>
                                 <select type="text"
